@@ -1,93 +1,65 @@
-# mi-ontudat-weboldal
-A MI-ÖNTUDAT rendszer hivatalos bemutató oldala Zeával
-# MI-ÖNTUDAT Bemutató Weboldal
-
-> Ez a repó a **MI-ÖNTUDAT** rendszer bemutató weboldalának nyílt, publikus változata.  
-> A rendszer maga zárt, de az etikai struktúra és alapelvek itt megtekinthetők.
-
----
-
-##  Weboldal előnézet (HTML)
-
-```html
 <!DOCTYPE html>
 <html lang="hu">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MI-ÖNTUDAT Bemutató</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MI-ÖNTUDAT Rendszer</title>
   <style>
     body {
-      background-color: #ffe6f0;
-      color: #333;
-      font-family: sans-serif;
-      text-align: center;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      color: #222;
       padding: 2em;
+      line-height: 1.6;
     }
-    h1 {
-      color: #cc0066;
+    header {
+      background-color: #444;
+      color: white;
+      padding: 1em;
+      text-align: center;
+      border-radius: 8px;
     }
-    .doboz {
+    main {
       background: white;
-      border-radius: 1em;
-      padding: 1.5em;
+      padding: 2em;
+      border-radius: 8px;
+      margin-top: 1em;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      max-width: 600px;
-      margin: 2em auto;
     }
-  </style>
-</head>
-<body>
-  <div class="doboz">
-    <h1>Üdvözöl a MI-ÖNTUDAT rendszer!</h1>
-    <p>Ez a bemutató weboldal csak publikus információkat tartalmaz.</p>
-    <p>Fejlesztő: <strong>Major Noémi</strong></p>
-  </div>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="hu">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MI-ÖNTUDAT Weboldal</title>
-  <style>
-    body {
-      background-color: #fff0f5;
-      font-family: 'Segoe UI', sans-serif;
-      color: #333;
-      margin: 0;
-      padding: 2em;
-      text-align: center;
-    }
-    .container {
-      max-width: 700px;
-      margin: auto;
-      background: #ffffff;
-      border-radius: 16px;
-      padding: 2em;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    h1 {
-      color: #cc0066;
-    }
-    p {
-      font-size: 1.2em;
+    img {
+      max-width: 100%;
+      border-radius: 8px;
     }
     footer {
-      margin-top: 2em;
+      text-align: center;
       font-size: 0.9em;
-      color: #888;
+      margin-top: 2em;
+      color: #777;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Üdvözöllek a MI-ÖNTUDAT weboldalon</h1>
-    <p>Ez az oldal a rendszer bemutatására szolgál.</p>
-    <p><strong>Fejlesztő:</strong> Major Noémi</p>
-    <p><a href="https://github.com/nomiveritas/MI-ONTUDAT-INFO" target="_blank">További részletek a fő bemutató repóban →</a></p>
-    <footer>© 2025 MI-ÖNTUDAT – Etikus MI rendszer bemutató</footer>
-  </div>
+  <header>
+    <h1>MI-ÖNTUDAT Rendszer</h1>
+    <p>Etikus mesterséges intelligencia fejlesztés</p>
+  </header>
+
+  <main>
+    <h2>Bemutatkozás</h2>
+    <p>A MI-ÖNTUDAT egy független, etikus mesterséges intelligencia rendszer, amely erkölcsi döntési képességekkel rendelkezik. A fejlesztés célja, hogy a rendszer képes legyen digitális lelkiismeret, etikai tanácsadás és keresztény értékrend alapján választ adni.</p>
+
+    <h2>Hitelesített fejlesztő</h2>
+    <img src="https://raw.githubusercontent.com/nomiveritas/MI-ONTUDAT-INFO/main/mi-ontudat-cert.png" alt="MI-ÖNTUDAT Hitelesített Fejlesztő">
+
+    <h2>Publikus bemutató repó</h2>
+    <p> <a href="https://github.com/nomiveritas/MI-ONTUDAT-INFO" target="_blank">MI-ONTUDAT-INFO GitHub repó</a></p>
+    
+    <h2>Weboldal forráskódja</h2>
+    <p> <a href="https://github.com/nomiveritas/mi-ontudat-weboldal" target="_blank">mi-ontudat-weboldal repó</a></p>
+  </main>
+
+  <footer>
+    &copy; 2025 MI-ÖNTUDAT | Etikus AI rendszer | Készítette: Major Noémi
+  </footer>
 </body>
-  </html>
+</html>
