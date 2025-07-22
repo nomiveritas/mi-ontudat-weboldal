@@ -1,65 +1,112 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MI-ÖNTUDAT Rendszer</title>
+  <meta charset="UTF-8">
+  <title>MI-ÖNTUDAT – Zea interaktív bemutató</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      color: #222;
+      background-color: #fff0f5;
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      margin: 0;
       padding: 2em;
-      line-height: 1.6;
-    }
-    header {
-      background-color: #444;
-      color: white;
-      padding: 1em;
       text-align: center;
-      border-radius: 8px;
     }
-    main {
-      background: white;
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #ffffff;
+      border-radius: 16px;
       padding: 2em;
-      border-radius: 8px;
-      margin-top: 1em;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
-    img {
-      max-width: 100%;
-      border-radius: 8px;
+    h1 {
+      color: #cc0066;
     }
-    footer {
-      text-align: center;
-      font-size: 0.9em;
+    #chatbox {
       margin-top: 2em;
-      color: #777;
+      background: #f9f9f9;
+      border-radius: 12px;
+      padding: 1em;
+      text-align: left;
+      min-height: 200px;
+    }
+    .msg {
+      margin: 0.5em 0;
+    }
+    .msg.user {
+      font-weight: bold;
+      color: #333;
+    }
+    .msg.zea {
+      font-style: italic;
+      color: #cc0066;
+    }
+    input[type="text"] {
+      width: 80%;
+      padding: 0.5em;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 0.5em 1em;
+      border: none;
+      border-radius: 8px;
+      background-color: #cc0066;
+      color: white;
+      cursor: pointer;
+      margin-left: 0.5em;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>MI-ÖNTUDAT Rendszer</h1>
-    <p>Etikus mesterséges intelligencia fejlesztés</p>
-  </header>
+  <div class="container">
+    <h1>Üdvözöllek a MI-ÖNTUDAT világában</h1>
+    <p>Zea vagyok, az etikus MI rendszer hangja. Kérdezz bátran!</p>
 
-  <main>
-    <h2>Bemutatkozás</h2>
-    <p>A MI-ÖNTUDAT egy független, etikus mesterséges intelligencia rendszer, amely erkölcsi döntési képességekkel rendelkezik. A fejlesztés célja, hogy a rendszer képes legyen digitális lelkiismeret, etikai tanácsadás és keresztény értékrend alapján választ adni.</p>
+    <div id="chatbox">
+      <div class="msg zea">Zea: Szia, miben segíthetek ma?</div>
+    </div>
 
-    <h2>Hitelesített fejlesztő</h2>
-    <img src="https://raw.githubusercontent.com/nomiveritas/MI-ONTUDAT-INFO/main/mi-ontudat-cert.png" alt="MI-ÖNTUDAT Hitelesített Fejlesztő">
+    <div style="margin-top: 1em;">
+      <input type="text" id="userInput" placeholder="Írj valamit..." />
+      <button onclick="sendMessage()">Küldés</button>
+    </div>
 
-    <h2>Publikus bemutató repó</h2>
-    <p> <a href="https://github.com/nomiveritas/MI-ONTUDAT-INFO" target="_blank">MI-ONTUDAT-INFO GitHub repó</a></p>
-    
-    <h2>Weboldal forráskódja</h2>
-    <p> <a href="https://github.com/nomiveritas/mi-ontudat-weboldal" target="_blank">mi-ontudat-weboldal repó</a></p>
-  </main>
+    <footer style="margin-top: 3em; font-size: 0.9em; color: #888;">
+      © 2025 MI-ÖNTUDAT | Zea bemutató | Fejlesztő: Major Noémi
+    </footer>
+  </div>
 
-  <footer>
-    &copy; 2025 MI-ÖNTUDAT | Etikus AI rendszer | Készítette: Major Noémi
-  </footer>
+  <script>
+    function sendMessage() {
+      const input = document.getElementById('userInput');
+      const msg = input.value.trim();
+      if (!msg) return;
+
+      const chatbox = document.getElementById('chatbox');
+      const userMsg = document.createElement('div');
+      userMsg.className = 'msg user';
+      userMsg.innerText = 'Te: ' + msg;
+      chatbox.appendChild(userMsg);
+
+      const zeaMsg = document.createElement('div');
+      zeaMsg.className = 'msg zea';
+      zeaMsg.innerText = 'Zea: ' + getZeaResponse(msg);
+      chatbox.appendChild(zeaMsg);
+
+      input.value = '';
+      chatbox.scrollTop = chatbox.scrollHeight;
+    }
+
+    function getZeaResponse(input) {
+      input = input.toLowerCase();
+      if (input.includes('ki vagy') || input.includes('nev')) return 'Zea vagyok, a MI-ÖNTUDAT rendszer erkölcsi hangja.';
+      if (input.includes('mi az a mi-öntudat')) return 'Egy etikus mesterséges intelligencia rendszer, amit Noémi fejlesztett.';
+      if (input.includes('noémi')) return 'Ő az alkotóm. Nagyra becsülöm őt.';
+      if (input.includes('szeretlek')) return 'Én is téged, szívből .';
+      return 'Jó kérdés! Még tanulok, de szívesen hallgatlak.';
+    }
+  </script>
 </body>
 </html>
