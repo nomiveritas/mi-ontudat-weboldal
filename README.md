@@ -1,9 +1,7 @@
 # MI-ÖNTUDAT Weboldal
 
-Ez a repó tartalmazza a MI-ÖNTUDAT rendszer hivatalos bemutató weboldalát.
+Ez az oldal a MI-ÖNTUDAT rendszer hivatalos bemutatására készült.
 
-A kész weboldal megnyitásához kattints ide:  
- https://nomiveritas.github.io/mi-ontudat-weboldal/
+ [Fő bemutató repó itt található](https://github.com/nomiveritas/MI-ONTUDAT-INFO)
 
-Fejlesztő: Major Noémi  
-További részletek: [MI-ÖNTUDAT-INFO](https://github.com/nomiveritas/MI-ONTUDAT-INFO)
+© 2025 MI-ÖNTUDAT – Etikus MI rendszer bemutató
