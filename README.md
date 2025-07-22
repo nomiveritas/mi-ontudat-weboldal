@@ -45,11 +45,3 @@ A MI-ÖNTUDAT rendszer hivatalos bemutató oldala Zeával
   </div>
 </body>
 </html>
-```
-
----
-
- **További fájlok**:
-- `index.html` (később ez lesz az élő weboldal tartalma)
-- `LICENSE` (licenc fájl)
-- `digitalis-lelkiismeret.md` (modulleírások)
