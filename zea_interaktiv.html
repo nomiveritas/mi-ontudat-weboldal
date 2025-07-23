@@ -1,4 +1,74 @@
+
 <!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zea – Interaktív válaszok</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8f8fc;
+      padding: 2rem;
+      max-width: 700px;
+      margin: auto;
+    }
+    h1 {
+      color: #333;
+    }
+    .button {
+      display: block;
+      width: 100%;
+      text-align: left;
+      background: #e0e7ff;
+      border: none;
+      padding: 1rem;
+      margin: 0.5rem 0;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .button:hover {
+      background: #c7d2fe;
+    }
+    .response {
+      background: #fff;
+      border-left: 4px solid #6366f1;
+      padding: 1rem;
+      margin: 0.5rem 0 1.5rem;
+      border-radius: 6px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Zea – Válaszadó felület</h1>
+  <p>Kattints egy kérdésre, és Zea válaszol:</p>
+
+  <button class="button" onclick="showAnswer(0)">Mi az MI-ÖNTUDAT rendszer?</button>
+  <div class="response" id="response0">
+    Az MI-ÖNTUDAT egy etikus mesterséges intelligencia rendszer, amelyet Major Noémi fejlesztett. A célja az emberi méltóság, erkölcs és lelkiismeret figyelembevétele döntési helyzetekben.
+  </div>
+
+  <button class="button" onclick="showAnswer(1)">Mit csinál Zea a rendszerben?</button>
+  <div class="response" id="response1">
+    Zea az MI-ÖNTUDAT rendszer válaszadó és tanácsadó interfésze, amely segít kérdésekre válaszolni az etikus MI működéséről – segít megérteni a rendszer erkölcsi logikáját.
+  </div>
+
+  <button class="button" onclick="showAnswer(2)">Hogyan születnek az erkölcsi döntések?</button>
+  <div class="response" id="response2">
+    Az erkölcsi döntéseket modulok sora hozza meg: Digitális Lelkiismeret, Etikai Tanácsadó, Keresztény Értékrend Szemantika és más MI-etikai szűrők együttesen alkotják a döntést.
+  </div>
+
+  <script>
+    function showAnswer(index) {
+      document.querySelectorAll('.response').forEach(el => el.style.display = 'none');
+      document.getElementById('response' + index).style.display = 'block';
+    }
+  </script>
+</body>
+</html><!DOCTYPE html>
 <html lang="hu">
 <head>
   <meta charset="UTF-8" />
