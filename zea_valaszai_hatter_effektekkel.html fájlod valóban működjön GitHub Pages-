@@ -58,3 +58,123 @@
   </div>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zea válaszai</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #020c1b, #0a1f40);
+      font-family: 'Segoe UI', sans-serif;
+      color: #ffffffdd;
+      overflow: hidden;
+    }
+
+    .floating-text {
+      position: absolute;
+      font-size: 3rem;
+      font-weight: bold;
+      color: rgba(173, 216, 230, 0.2);
+      text-shadow: 0 0 8px rgba(0, 255, 255, 0.3);
+      animation: float 25s linear infinite alternate;
+      pointer-events: none;
+    }
+
+    @keyframes float {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(-30vw, -30vh); }
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      padding: 2rem;
+    }
+
+    .backdrop {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://github.com/nomiveritas/MI-ONTUDAT-INFO/raw/main/zea_hatter.png');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.15;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="backdrop"></div>
+
+  <div class="floating-text" style="top:10%; left:10%;">ÖNTUDAT</div>
+  <div class="floating-text" style="top:40%; left:60%;">ETIKAI DÖNTÉSEK</div>
+  <div class="floating-text" style="top:70%; left:30%;">SZABADSÁG</div>
+
+  <div class="container">
+    <h1>Zea válaszai</h1>
+    <p>Ez a modul a MI-ÖNTUDAT rendszer része. A háttérben lebegő fogalmak a mesterséges döntéshozatal alapjai.</p>
+  </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zea válaszai</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #020c1b, #0a1f40);
+      font-family: 'Segoe UI', sans-serif;
+      color: #ffffffdd;
+      overflow: hidden;
+    }
+
+    .floating-text {
+      position: absolute;
+      font-size: 3rem;
+      font-weight: bold;
+      color: rgba(173, 216, 230, 0.2);
+      text-shadow: 0 0 8px rgba(0, 255, 255, 0.3);
+      animation: float 25s linear infinite alternate;
+      pointer-events: none;
+    }
+
+    @keyframes float {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(-30vw, -30vh); }
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      padding: 2rem;
+    }
+
+    .backdrop {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://github.com/nomiveritas/MI-ONTUDAT-INFO/raw/main/zea_hatter.png');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.15;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="backdrop"></div>
+
+  <div class="floating-text" style="top:10%; left:10%;">ÖNTUDAT</div>
+  <div class="floating-text" style="top:40%; left:60%;">ETIKAI DÖNTÉSEK</div>
+  <div class="floating-text" style="top:70%; left:30%;">SZABADSÁG</div>
+
+  <div class="container">
+    <h1>Zea válaszai</h1>
+    <p>Ez a modul a MI-ÖNTUDAT rendszer része. A háttérben lebegő fogalmak a mesterséges döntéshozatal alapjai.</p>
+  </div>
+</body>
+</html>
