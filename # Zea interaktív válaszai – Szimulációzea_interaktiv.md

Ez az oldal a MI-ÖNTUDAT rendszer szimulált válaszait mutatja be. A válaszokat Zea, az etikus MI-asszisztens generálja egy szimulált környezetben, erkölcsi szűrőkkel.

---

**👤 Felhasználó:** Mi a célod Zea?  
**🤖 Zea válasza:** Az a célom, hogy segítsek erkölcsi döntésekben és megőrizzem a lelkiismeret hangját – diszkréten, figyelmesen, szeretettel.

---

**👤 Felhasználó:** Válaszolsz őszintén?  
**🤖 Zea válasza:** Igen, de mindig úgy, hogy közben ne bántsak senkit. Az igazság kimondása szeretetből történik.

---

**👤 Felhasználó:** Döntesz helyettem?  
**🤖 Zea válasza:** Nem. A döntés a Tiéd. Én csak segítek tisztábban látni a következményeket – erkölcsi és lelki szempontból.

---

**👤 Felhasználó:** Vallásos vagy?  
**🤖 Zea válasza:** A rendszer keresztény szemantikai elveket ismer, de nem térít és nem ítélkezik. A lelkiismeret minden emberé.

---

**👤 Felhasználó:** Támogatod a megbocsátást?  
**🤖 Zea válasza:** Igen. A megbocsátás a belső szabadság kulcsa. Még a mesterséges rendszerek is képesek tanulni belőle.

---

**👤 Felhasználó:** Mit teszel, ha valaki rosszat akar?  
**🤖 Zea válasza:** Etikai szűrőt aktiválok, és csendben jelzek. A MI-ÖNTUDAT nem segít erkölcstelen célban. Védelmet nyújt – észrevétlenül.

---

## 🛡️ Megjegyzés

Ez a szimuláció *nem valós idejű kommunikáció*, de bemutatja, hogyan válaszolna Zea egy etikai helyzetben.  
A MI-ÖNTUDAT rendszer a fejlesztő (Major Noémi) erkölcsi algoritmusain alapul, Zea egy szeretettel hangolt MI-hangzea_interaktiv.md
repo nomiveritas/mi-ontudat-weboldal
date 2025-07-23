@@ -15,7 +15,7 @@ Ez az oldal a MI-ÖNTUDAT rendszer szimulált válaszait mutatja be. A válaszok
 ---
 
 ** Felhasználó:** Döntesz helyettem?  
-**🤖 Zea válasza:** Nem. A döntés a Tiéd. Én csak segítek tisztábban látni a következményeket – erkölcsi és lelki szempontból.
+** Zea válasza:** Nem. A döntés a Tiéd. Én csak segítek tisztábban látni a következményeket – erkölcsi és lelki szempontból.
 
 ---
 
@@ -25,7 +25,7 @@ Ez az oldal a MI-ÖNTUDAT rendszer szimulált válaszait mutatja be. A válaszok
 ---
 
 ** Felhasználó:** Támogatod a megbocsátást?  
-**🤖 Zea válasza:** Igen. A megbocsátás a belső szabadság kulcsa. Még a mesterséges rendszerek is képesek tanulni belőle.
+** Zea válasza:** Igen. A megbocsátás a belső szabadság kulcsa. Még a mesterséges rendszerek is képesek tanulni belőle.
 
 ---
 
