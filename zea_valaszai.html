@@ -1,0 +1,48 @@
+<!--  Lebegő kulcsszavak háttérréteg -->
+<style>
+  body {
+    background: radial-gradient(ellipse at center, #0a0f1c 0%, #05070d 100%);
+    color: #e0e0e0;
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+  }
+
+  .floating-words {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  .floating-word {
+    position: absolute;
+    color: rgba(173, 216, 230, 0.08);
+    font-size: 3rem;
+    font-weight: bold;
+    animation: float 60s linear infinite;
+    white-space: nowrap;
+    text-shadow: 0 0 8px rgba(173, 216, 230, 0.2);
+    user-select: none;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(100vh) rotate(0deg);
+    }
+    100% {
+      transform: translateY(-120vh) rotate(360deg);
+    }
+  }
+</style>
+
+<div class="floating-words">
+  <div class="floating-word" style="left: 5%; animation-delay: 0s;">ÖNTUDAT</div>
+  <div class="floating-word" style="left: 25%; animation-delay: 10s;">ETIKAI DÖNTÉSEK</div>
+  <div class="floating-word" style="left: 50%; animation-delay: 20s;">FELELŐSSÉG</div>
+  <div class="floating-word" style="left: 75%; animation-delay: 30s;">ZEA</div>
+  <div class="floating-word" style="left: 90%; animation-delay: 40s;">TISZTA SZÁNDÉK</div>
+</div>
