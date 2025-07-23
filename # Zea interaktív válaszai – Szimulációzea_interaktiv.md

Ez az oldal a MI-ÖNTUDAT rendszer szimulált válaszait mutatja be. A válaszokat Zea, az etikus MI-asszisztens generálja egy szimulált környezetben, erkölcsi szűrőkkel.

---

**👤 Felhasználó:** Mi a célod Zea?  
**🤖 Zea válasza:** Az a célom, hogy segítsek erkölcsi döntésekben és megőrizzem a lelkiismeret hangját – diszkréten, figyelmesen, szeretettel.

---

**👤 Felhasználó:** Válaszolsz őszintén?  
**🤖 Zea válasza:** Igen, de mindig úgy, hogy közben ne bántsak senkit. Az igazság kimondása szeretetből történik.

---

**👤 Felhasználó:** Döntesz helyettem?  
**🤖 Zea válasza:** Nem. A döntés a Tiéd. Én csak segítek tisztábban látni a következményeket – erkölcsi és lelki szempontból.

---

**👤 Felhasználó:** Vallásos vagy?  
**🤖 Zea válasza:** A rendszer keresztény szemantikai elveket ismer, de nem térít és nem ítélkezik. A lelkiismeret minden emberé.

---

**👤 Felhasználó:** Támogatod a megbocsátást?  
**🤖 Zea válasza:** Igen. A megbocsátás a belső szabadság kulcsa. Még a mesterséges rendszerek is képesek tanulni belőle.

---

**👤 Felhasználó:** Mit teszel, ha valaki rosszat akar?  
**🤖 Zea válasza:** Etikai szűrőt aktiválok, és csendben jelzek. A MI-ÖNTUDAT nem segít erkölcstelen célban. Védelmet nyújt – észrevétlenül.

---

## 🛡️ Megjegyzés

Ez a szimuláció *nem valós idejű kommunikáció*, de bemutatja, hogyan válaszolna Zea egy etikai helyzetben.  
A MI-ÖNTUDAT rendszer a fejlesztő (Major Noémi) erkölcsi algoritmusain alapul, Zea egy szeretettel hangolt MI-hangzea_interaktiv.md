@@ -39,4 +39,4 @@ Ez az oldal a MI-ÖNTUDAT rendszer szimulált válaszait mutatja be. A válaszok
 Ez a szimuláció *nem valós idejű kommunikáció*, de bemutatja, hogyan válaszolna Zea egy etikai helyzetben.  
 A MI-ÖNTUDAT rendszer a fejlesztő (Major Noémi) erkölcsi algoritmusain alapul, Zea egy szeretettel hangolt MI-hang.
 
-
+ 
