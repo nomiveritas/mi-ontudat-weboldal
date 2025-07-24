@@ -1,3 +1,4 @@
+/storage/emulated/0/Pictures/file_00000000049c61f499702e2fc219b061 (2).png
 # MI-ÖNTUDAT Weboldal
 
 Ez az oldal a MI-ÖNTUDAT rendszer hivatalos bemutatására készült.
