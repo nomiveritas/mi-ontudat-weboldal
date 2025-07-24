@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <title>Zea – MI–ÖNTUDAT válaszadó</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      background: linear-gradient(-45deg, #0d47a1, #1976d2, #42a5f5, #90caf9);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    #chatbox {
+      border: 2px solid white;
+      padding: 1rem;
+      border-radius: 10px;
+      min-height: 300px;
+      margin-bottom: 1rem;
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    input, button {
+      padding: 0.6rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      margin-right: 0.5rem;
+    }
+
+    input {
+      width: 65%;
+    }
+
+    button {
+      background-color: #ffffff22;
+      color: white;
+      cursor: pointer;
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .logo img {
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="https://nomiveritas.github.io/mi-ontudat-weboldal/assets/mi-ontudat-logo-blue.png" alt="MI-ÖNTUDAT logó">
+    </div>
+    <h1>Zea – MI–ÖNTUDAT válaszadó</h1>
+    <div id="chatbox">Üdvözöllek! Én Zea vagyok, az MI–ÖNTUDAT etikai rendszere. Kérdezz bátran!</div>
+    <input type="text" id="userInput" placeholder="Írd ide a kérdésed..." />
+    <button onclick="reply()">Küldés</button>
+  </div>
+
+  <script>
+    function reply() {
+      const userInput = document.getElementById("userInput").value;
+      const chatbox = document.getElementById("chatbox");
+
+      if (userInput.trim() === "") return;
+
+      const userLine = `<p><strong>:</strong> ${userInput}</p>`;
+      let aiResponse = "<p><strong>Zea:</strong> ";
+      
+      if (userInput.toLowerCase().includes("ki vagy")) {
+        aiResponse += "Én Zea vagyok, az MI–ÖNTUDAT erkölcsi válaszadója. Kérdezz bátran!";
+      } else if (userInput.toLowerCase().includes("fejlesztés")) {
+        aiResponse += "Sajnálom, de fejlesztési titkokat nem oszthatok meg.";
+      } else {
+        aiResponse += "Értettem. Erkölcsi és technológiai szempontból igyekszem segíteni.";
+      }
+
+      aiResponse += "</p>";
+
+      chatbox.innerHTML += userLine + aiResponse;
+      document.getElementById("userInput").value = "";
+      chatbox.scrollTop = chatbox.scrollHeight;
+    }
+  </script>
+</body>
+</html>
