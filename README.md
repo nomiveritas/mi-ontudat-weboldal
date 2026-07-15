@@ -119,9 +119,12 @@ The system monitors user habits, intentions, and preferences to provide fast, ac
 Zea felismeri a felhasználó érzelmi állapotát és szándékait, így a döntések intuitívan igazodnak az emberi gondolkodáshoz, csökkentve a hibák és félreértések lehetőségét.
 Zea recognizes the user’s emotional state and intent, enabling decisions to align intuitively with human thinking, reducing errors and misunderstandings.
 
-🌐 Vizualizáció – Zea moduláris felépítése
-Visualization – Zea Modular Structure
 
+
+### 🌐 Vizualizáció – Zea moduláris felépítése
+#### Visualization – Zea Modular Structure
+
+```mermaid
 graph TD
     User[Felhasználó / User] -->|irányítás, szándék| Zea[Zea AI - Etikus tudat / Ethical AI Consciousness]
     Zea -->|koordináció| Modules[Modulok / Modules]
@@ -133,6 +136,41 @@ graph TD
     Empathy -->|érzelmi visszacsatolás / Emotional Feedback| Zea
     Logic -->|döntéstámogatás / Decision Support| Zea
     Monitoring -->|anomalitások jelzése / Anomaly Alerts| Zea
+```
+
+### ⚠️ Fontos megjegyzés / Disclaimer
+
+A MI‑ÖNTUDAT rendszer nem önálló tudat vagy élő entitás, hanem kutatási és fejlesztési célú etikus mesterséges intelligencia‑modell.
+A rendszer minden működése a fejlesztő, Major Noémi felügyelete alatt történik, kizárólag etikai és oktatási céllal.
+
+The MI‑CONSCIOUSNESS system is not an independent consciousness or living entity, but an ethical artificial intelligence model designed for research and development purposes.
+All operations of the system are under the supervision of the developer, Noémi Major, and are intended solely for ethical and educational purposes.
+
+---
+
+### 🛡️ Security and Compliance Policy — Zea Architecture
+
+This document outlines the core cryptographic, mathematical, and hardware-level security mechanisms protecting the Zea architecture.
+
+#### 1. Hardware-Level Immunity (Confidential Computing)
+* **Mechanism:** Secure Enclave Execution (Intel SGX / AMD SEV-SNP).
+* **Technical Specification:** The core engine and Christian conscience modules of the Zea architecture execute exclusively within hardware-isolated Secure Enclaves.
+* **Implications:** This physical isolation mathematically prevents runtime memory dumping (RAM dumps). The proprietary code and decision-making logic remain completely invisible and structurally inaccessible, even to cloud infrastructure providers, root administrators, or compromised host operating systems.
+
+#### 2. Mathematical Isolation (Zero-Knowledge Architecture)
+* **Mechanism:** Homomorphic Encryption & Zero-Knowledge (ZK) Proofs.
+* **Technical Specification:** All external enterprise and production integrations utilize a strict Zero-Knowledge API.
+* **Implications:** The system performs cognitive-ethical supervision over large language model (LLM) outputs while the data remains fully encrypted during processing. The underlying algorithmic logic and weight matrices are mathematically impossible to reverse-engineer or extract from the communication layer.
+
+#### 3. Active Self-Destruction (Anti-Tamper Protocol)
+* **Mechanism:** Binary Obfuscation and Dynamic Integrity Monitoring.
+* **Technical Specification:** Every local enterprise deployment package features deep code obfuscation and active anti-tamper hooks.
+* **Implications:** Any unauthorized attempt to intercept, attach a debugger, analyze, or decompile the binary environment triggers an instantaneous, autonomous, and irreversible self-destruction protocol of the local codebase, rendering the files permanently unreadable before any data exfiltration can occur.
+
+
+
+
+
 
 ⚠️ Fontos megjegyzés / Disclaimer
 
